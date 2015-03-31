@@ -2,6 +2,7 @@
 
 <head>
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'></script>
+<script src='jquery.simple-text-rotator.js'</script>
 <script type='text/javascript'>
 $(document).ready(function(){
     function setRandomWord(){
@@ -10,6 +11,13 @@ $(document).ready(function(){
     }
     setInterval(setRandomWord,20);
 });
+
+$("#test").textrotator({
+        animation: "spin",
+        separator: ",",
+    speed: 2000
+    });
+
 </script>
 </head>
 
