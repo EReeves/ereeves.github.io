@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+$(document).ready(function(){
+    function setRandomWord(){
+        var phrases =new Array("AH!!!","AHH!!!", "AHHH!!!", "AHHHH!!!", "AHHHHH!!!", "AHHHHHHHH!!!", "AHHHHHHHHHHHH!!!");  
+        $("#test").text(phrases[Math.floor(Math.random()*phrases.length)]);
+    }
+    setInterval(setRandomWord,300);
+});
+</script>
+</head>
+
+<body>
+
+<h1>Arcanum stuff</h1>
+
+Ok so download this patch, allows you to use -windowed and fixes a bucnh of gamebreaking bugs/minor stuff.<p>
+<a href="http://koti.mbnet.fi/ton_hur/files/Arcanum/UAP091225.exe">this</a><p>
+
+Put it in the game folder, right click run as administrator and install.<br>
+
+Then download this highres patch.<p>
+<a href="http://www.patches-scrolls.com/getfile.php?file=arcanum_highres_highres11a.zip&mirror=1">this</a><p>
+
+Do the same, make sure you run it as admin. It will open a command window, follow the prompts.<br><p>
+
+Then rename ddraw.dll in the game folder to ddraw.dll.old or something, as long as it's different.<br><p>
+
+In the shortcut to the game or in the steam properties under target put -windowed after the target.
+
+like "C:\GOG Games\Arcanum\Arcanum.exe" -window<p><p>
+
+Theres also the high res audio and high res map textures if you want them, I havenbt tested them yet.<p>
+HQ Townmaps <a href="http://downloads.computergames.ro/hdd3/mod/HQ_Townmaps.zip">Here</a><p>
+HQ audio <a href="http://downloads.computergames.ro/hdd3/media/HQ_Music_MP3.zip">Here</a><p><p>
+
+
+<strong><span id='test'>AAAAHHHHHHHHHHHHHHH!!!!!</span></strong>
+
+</body>
+</html>
